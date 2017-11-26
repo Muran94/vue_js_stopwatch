@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Digital Font';
+  src: url('Let_s_go_Digital_Regular.ttf')
+}
+
+body {
+  font-family: 'Digital Font', sans-serif;
+  background: #000;
+  font-size: 14px;
+  color: #08c;
+}
+.container {
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+}
+#timer {
+  font-size: 80px;
+  text-shadow: 0 2px 5px rgba(0, 170, 255, 0.5);
+}
+.buttons {
+  margin: 50px auto 0;
+}
+.button {
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000;
+  background: #555;
+  cursor: pointer;
+  float: left;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.button + .button {
+  margin-left: 20px;
+}
+.active {
+  background: #0af;
+}

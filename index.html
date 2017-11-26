@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/vue"></script>
+  <title>Vue.jsで作るストップウォッチ</title>
+</head>
+<body>
+
+  <div id="myapp" class="container">
+    <div id="timer">{{ time }}</div>
+    <div class="buttons">
+      <div class="button" :class="{ active: activeButtons.start }" id="start" @click="startTimer">START</div>
+      <div class="button" :class="{ active: activeButtons.stop }" id="stop" @click="stopTimer">STOP</div>
+      <div class="button" :class="{ active: activeButtons.reset }" id="reset" @click="resetTimer">RESET</div>
+    </div>
+  </div>
+
+  <script src="vue.js"></script>
+</body>
+</html>
